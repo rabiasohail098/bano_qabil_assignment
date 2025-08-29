@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woman's Fashion - Exclusive</title>
+    <link rel="icon" type="image/x-icon" href="./utils/images/favicon.ico">
+    <link rel="stylesheet" href="woman.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        <!-- Top Header Bar (unchanged) -->
+        <div class="top-header">
+            <div class="container d-flex flex-column flex-md-row justify-content-md-between align-items-center text-center">
+                <p class="header mb-2 mb-md-0 flex-grow-1 text-md-center">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="./products.html" class="text-white text-decoration-underline fw-bold ms-1">ShopNow</a></p>
+                <div class="ms-md-auto mt-2 mt-md-0">
+                    <select name="language" class="form-select form-select-sm bg-dark text-white border-0">
+                        <option value="English">English</option>
+                        <option value="Urdu">Urdu</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar (Woman's Fashion link active) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="#">Exclusive</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item active" href="./womanfashion.html">Woman’s Fashion</a></li> <!-- Active here -->
+                                <li><a class="dropdown-item" href="./manfashion.html">Men’s Fashion</a></li>
+                                <li><a class="dropdown-item" href="./electronic.html">Electronics</a></li>
+                                <li><a class="dropdown-item" href="./lifestyle.html">Home & Lifestyle</a></li>
+                                <li><a class="dropdown-item" href="./shoes.html">Shoes</a></li>
+                                <li><a class="dropdown-item" href="./toys.html">Baby’s & Toys</a></li>
+                                <li><a class="dropdown-item" href="./grocery.html">Groceries & Pets</a></li>
+                                <li><a class="dropdown-item" href="./beauty.html">Health & Beauty</a></li>
+                            </ul>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./products.html" tabindex="-1">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" tabindex="-1">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="./signin.html" class="btn btn-outline-danger me-2">Sign In</a>
+                        <a href="./signup.html" class="btn btn-danger">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="container py-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-muted home">Home</a></li>
+                <li class="breadcrumb-item active text-danger" aria-current="page">Woman's Fashion</li>
+            </ol>
+        </nav>
+    </section>
+
+    <!-- NEW: Woman's Fashion Hero Section -->
+    <section class="container hero-woman-fashion">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 text-lg-start text-center mx-auto">
+                    <h1 class="mb-3 text-dark">Embrace Your Style: The Latest Trends for Her!</h1>
+                    <p class="lead mb-4 text-dark">Discover exquisite dresses, elegant accessories, and everyday essentials that define modern femininity.</p>
+                    <a href="#featured-products" class="btn btn-lg fw-bold">Shop New Arrivals</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Season Collections Section -->
+    <section class="container py-5 mb-5">
+        <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Collections</h2>
+            </div>
+            <h3 class="main-section-title mb-4">Shop By Season & Occasion</h3>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 text-center">
+                <!-- Season Collection Card 1: Summer -->
+                <div class="col">
+                    <div class="season-collection-card">
+                        <img src="./utils/images/sum.png" alt="Summer Fashion" class="img-fluid">
+                        <h5 class="fw-bold mb-0">Summer Vibes</h5>
+                        <p class="text-muted">Light & breezy</p>
+                    </div>
+                </div>
+                <!-- Season Collection Card 2: Autumn -->
+                <div class="col">
+                    <div class="season-collection-card">
+                        <img src="./utils/images/aut.png" alt="Autumn Fashion" class="img-fluid">
+                        <h5 class="fw-bold mb-0">Autumn Elegance</h5>
+                        <p class="text-muted">Cozy & chic</p>
+                    </div>
+                </div>
+                <!-- Season Collection Card 3: Winter -->
+                <div class="col">
+                    <div class="season-collection-card">
+                        <img src="./utils/images/win.png" alt="Winter Fashion" class="img-fluid">
+                        <h5 class="fw-bold mb-0">Winter Wonderland</h5>
+                        <p class="text-muted">Warm & stylish</p>
+                    </div>
+                </div>
+                <!-- Season Collection Card 4: Spring -->
+                <div class="col">
+                    <div class="season-collection-card">
+                        <img src="./utils/images/spr.png" alt="Spring Fashion" class="img-fluid">
+                        <h5 class="fw-bold mb-0">Spring Blossom</h5>
+                        <p class="text-muted">Fresh & vibrant</p>
+                    </div>
+                </div>
+                <!-- Season Collection Card 5: Evening Wear -->
+                <div class="col">
+                    <div class="season-collection-card">
+                        <img src="./utils/images/eve.png" alt="Evening Wear" class="img-fluid">
+                        <h5 class="fw-bold mb-0">Evening Glam</h5>
+                        <p class="text-muted">Dazzle & shine</p>
+                    </div>
+                </div>
+                <!-- Season Collection Card 6: Casual -->
+                <div class="col">
+                    <div class="season-collection-card">
+                        <img src="./utils/images/cas.png" alt="Casual Wear" class="img-fluid">
+                        <h5 class="fw-bold mb-0">Casual Comfort</h5>
+                        <p class="text-muted">Everyday ease</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Fashion Inspiration Gallery Carousel -->
+    <section class="container py-5 mb-5">
+        <h3 class="main-section-title text-center mb-5">Your Daily Fashion Inspiration</h3>
+        <div id="fashionGalleryCarousel" class="carousel slide fashion-gallery-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#fashionGalleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#fashionGalleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#fashionGalleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./utils/images/1.png" class="d-block w-100" alt="Stylish Woman in Red Dress">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Elegance in Every Stitch</h5>
+                        <p>Discover our bespoke collection designed for the modern woman.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./utils/images/2.png" class="d-block w-100" alt="Casual Chic Outfit">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Effortless Chic for Everyday</h5>
+                        <p>Comfort meets style in our versatile casual wear range.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./utils/images/3.png" class="d-block w-100" alt="Woman with Accessories">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Accessories to Complete Your Look</h5>
+                        <p>Elevate any outfit with our stunning selection of bags and jewelry.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#fashionGalleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#fashionGalleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Woman's Fashion Products Section -->
+    <section class="container py-5" id="featured-products">
+        <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Must-Haves</h2>
+            </div>
+            <h2 class="main-section-title mb-0">Our Top Picks for Her</h2>
+        </div>
+    </section>
+
+    <!-- Product Cards -->
+    <section class="container mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (3).png" class="card-img-top" alt="Elegant Winter Coat">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Winter Coat</h5>
+                        <p class="card-text">$260 <span class="text-decoration-line-through text-black-50">$360</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 7.png" class="card-img-top" alt="Green Long Kurti">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Green Long Kurti</h5>
+                        <p class="card-text">$260 <span class="text-decoration-line-through text-black-50">$360</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 7.jpg" class="card-img-top" alt="Purple Gown">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Purple Gown</h5>
+                        <p class="card-text">$960 <span class="text-decoration-line-through text-black-50">$1160</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (11).png" class="card-img-top" alt="Gucci Duffle Bag">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gucci Duffle Bag</h5>
+                        <p class="card-text">$960 <span class="text-decoration-line-through text-black-50">$1160</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div>
+                        <img src="./utils/images/Rectangle 8 (4).png" class="card-img-top" alt="RGB liquid CPU Cooler" style="padding: 1.5rem; height: 16rem; background-color: #f5f5f9;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Short Kurti</h5>
+                        <p class="card-text">$160 <span class="text-decoration-line-through text-black-50">$180</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div>
+                        <img src="./utils/images/Rectangle 8 (3).png" class="card-img-top" alt="Small BookSelf" style="padding: 1.5rem; height: 16rem; background-color: #f5f5f9;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Saree</h5>
+                        <p class="card-text">$360 <span class="text-decoration-line-through text-black-50">$560</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div>
+                        <img src="./utils/images/Rectangle 7 (1).png" class="card-img-top" alt="Small BookSelf" style="padding: 1.5rem; height: 16rem; background-color: #f5f5f9;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Red Gown</h5>
+                        <p class="card-text">$360 <span class="text-decoration-line-through text-black-50">$560</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart.png" class="card-img-top" alt="RGB liquid CPU Cooler">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Curology Product Set</h5>
+                        <p class="card-text">$160 <span class="text-decoration-line-through text-black-50">$180</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div>
+                        <img src="./utils/images/Rectangle 8 (1).png" class="card-img-top" alt="Small BookSelf" style="padding: 1.5rem; height: 16rem; background-color: #f5f5f9;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Green Gown</h5>
+                        <p class="card-text">$360 <span class="text-decoration-line-through text-black-50">$560</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div>
+                        <img src="./utils/images/Rectangle 8.png" class="card-img-top" alt="Small BookSelf" style="padding: 1.5rem; height: 16rem; background-color: #f5f5f9;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Grey Long Kurti</h5>
+                        <p class="card-text">$360 <span class="text-decoration-line-through text-black-50">$560</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div>
+                        <img src="./utils/images/Rectangle 8 (2).png" class="card-img-top" alt="Small BookSelf" style="padding: 1.5rem; height: 16rem; background-color: #f5f5f9;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Saree</h5>
+                        <p class="card-text">$360 <span class="text-decoration-line-through text-black-50">$560</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/per.png" class="card-img-top" alt="Small BookSelf">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">GUCCI INTENSE OUD EDP</h5>
+                        <p class="card-text">$360 <span class="text-decoration-line-through text-black-50">$560</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Fashion Tips & Tricks Section -->
+    <section class="container py-5 bg-white rounded shadow-sm my-5">
+        <h3 class="main-section-title text-center mb-5">Fashion Tips & Styling Guides</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="fashion-tip-card">
+                    <h5>Mastering Layering for Autumn</h5>
+                    <p>Layering isn't just for warmth; it's a style statement. Start with a thin base, add a stylish blouse or light knit, and finish with a trench coat. Play with textures and colors for a dynamic look.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="fashion-tip-card">
+                    <h5>The Power of Accessories</h5>
+                    <p>A simple outfit can be transformed with the right accessories. A statement necklace, a chic handbag, or a pair of bold earrings can elevate your look from basic to breathtaking. Don't underestimate their impact!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="fashion-tip-card">
+                    <h5>Finding Your Perfect Fit</h5>
+                    <p>Comfort and confidence come from a great fit. Always check your measurements against size guides, and don't be afraid to try different brands. Tailoring can also make a huge difference in how clothes look and feel on you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+                <!-- Exclusive -->
+                <div class="col">
+                    <h3 class="mb-3">Exclusive</h3>
+                    <h5 class="mb-2">Subscribe</h5>
+                    <p class="mb-3">Get 10% off your first order</p>
+                    <div class="input-group footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                        <span class="input-group-text"><i class="fas fa-paper-plane"></i></span>
+                    </div>
+                </div>
+                <!-- Support -->
+                <div class="col">
+                    <h3 class="mb-3">Support</h3>
+                    <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+                <!-- Account -->
+                <div class="col">
+                    <h3 class="mb-3">Account</h3>
+                    <p><a href="#" class="text-white text-decoration-none">My Account</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Login / Register</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Cart</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">WishList</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Shop</a></p>
+                </div>
+                <!-- Quick Link -->
+                <div class="col">
+                    <h3 class="mb-3">Quick Link</h3>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Terms Of Use</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">FAQ</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+                </div>
+                <!-- Download App -->
+                <div class="col">
+                    <h3 class="mb-3">Download App</h3>
+                    <p class="mb-3">Save $3 with App New User Only</p>
+                    <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
+                        <img src="./utils/images/Qr Code.png" alt="QR Code" class="img-fluid qr-code mb-2 mb-sm-0">
+                        <div>
+                            <a href="#" class="d-block mb-2"><img src="./utils/images/play.png" alt="Google Play Store" class="img-fluid app-store-btn"></a>
+                            <a href="#" class="d-block"><img src="./utils/images/download-appstore.png" alt="App Store" class="img-fluid app-store-btn"></a>
+                        </div>
+                    </div>
+                   <div class="d-flex gap-3 mt-4 social-icons">
+                        <a href="https://www.facebook.com/rabiasohail1209/"><img src="./utils/images/facebook.png" alt="Facebook"></a>
+                        <a href="https://x.com/rabiasohail1209"><img src="./utils/images/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/rabiasohail642/"><img src="./utils/images/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/rabia-sohail-684740278/"><img src="./utils/images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-3 border-top border-secondary">
+                <p class="mb-0 text-secondary">&copy; Copyright Exclusive 2024. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

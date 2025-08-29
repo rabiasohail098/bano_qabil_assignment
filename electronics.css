@@ -1,0 +1,378 @@
+  body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #f8f9fa;
+      /* Light background for the page */
+  }
+
+  /* Top Header Styles */
+  .top-header {
+      background-color: #000;
+      color: #fff;
+      padding: 0.75rem 0;
+      font-size: 0.875rem;
+  }
+
+  .top-header .header span {
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+  }
+
+  .top-header select {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      outline: none;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+  }
+
+  .top-header select option {
+      background-color: #000;
+      color: #fff;
+  }
+
+  /* Navbar Customization */
+  .navbar-brand {
+      font-weight: 700;
+      font-size: 1.75rem;
+  }
+
+  .navbar-nav .nav-link {
+      font-weight: 500;
+      transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+      color: #DB4444 !important;
+  }
+
+  .navbar-nav .nav-link.active {
+      color: #DB4444 !important;
+  }
+
+  .navbar-toggler:focus {
+      box-shadow: none;
+  }
+
+  .dropdown-menu {
+      line-height: 1.8rem;
+  }
+
+  .dropdown-menu a {
+      text-decoration: none;
+      color: #333;
+  }
+
+  .dropdown-menu a:hover {
+      color: #DB4444;
+      background-color: #f8f9fa;
+  }
+
+  /* Section Headings */
+  .section-header-line {
+      background-color: #DB4444;
+      width: 1.3rem;
+      height: 2.5rem;
+      border-radius: 0.25rem;
+  }
+
+  .section-heading-text {
+      color: #DB4444;
+      font-weight: bold;
+      font-size: 1.1rem;
+  }
+
+  .main-section-title {
+      font-weight: bold;
+      font-size: 2.2rem;
+  }
+
+  /* Card Customization */
+  .card {
+      border: none;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease-in-out;
+  }
+
+  .card:hover {
+      transform: translateY(-5px);
+  }
+
+  .card-img-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      /* 1:1 aspect ratio */
+      overflow: hidden;
+      background-color: #F5F5F5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .card-img-wrapper img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      /* For product images, use contain for full item visibility */
+      padding: 1rem;
+  }
+
+  .card-title {
+      font-weight: 600;
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+      font-weight: 600;
+      color: #DB4444;
+  }
+
+  .card-text span {
+      color: #000;
+      margin-left: 0.5rem;
+      text-decoration: line-through;
+      font-weight: normal;
+  }
+
+  .star-rating img {
+      width: 20px;
+      height: 16px;
+      margin-right: 0.1rem;
+      object-fit: contain;
+      background-color: transparent;
+      padding: 0;
+  }
+
+  /* Footer Styles */
+  footer {
+      background-color: #000;
+      color: #fff;
+      padding: 4rem 0;
+  }
+
+  footer h3 {
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+  }
+
+  footer p {
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+  }
+
+  footer .form-control {
+      background-color: transparent;
+      border-color: #fff;
+      color: #fff;
+  }
+
+  footer .form-control::placeholder {
+      color: #ccc;
+  }
+
+  footer .form-control:focus {
+      background-color: transparent;
+      border-color: #DB4444;
+      box-shadow: none;
+      color: #fff;
+  }
+
+  footer .social-icons img {
+      width: 30px;
+      height: 30px;
+      filter: invert(1);
+  }
+
+  footer .qr-code {
+      max-width: 100px;
+      height: auto;
+  }
+
+  footer .app-store-btn {
+      max-width: 120px;
+      height: auto;
+  }
+
+  .footer-subscribe .input-group {
+      max-width: 250px;
+  }
+
+  .footer-subscribe .input-group-text {
+      background-color: transparent;
+      border: 1px solid #fff;
+      border-left: none;
+      color: #fff;
+  }
+
+  /* --- NEW: Electronics-specific styles --- */
+  .hero-electronics {
+      min-height: 450px;
+      /* Adjust height as needed */
+      display: flex;
+      align-items: center;
+      background-color: #000;
+      /* Dark background for sleek look */
+      color: #fff;
+  }
+
+  .hero-electronics .hero-text h1 {
+      font-size: 3.25rem;
+      line-height: 1.2;
+  }
+
+  .hero-electronics .hero-image img {
+      max-height: 400px;
+      /* Limit image height */
+      object-fit: contain;
+  }
+.home:hover{
+  color: #db4444 !important;
+}
+  .btn-outline-light.text-danger:hover {
+      background-color: rgba(220, 53, 69, 0.1);
+      /* Light red background on hover */
+      color: #DB4444;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .category-feature-card {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+  }
+
+  .category-feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .category-feature-card .icon {
+      font-size: 3.5rem;
+      /* Larger icon size */
+      color: #DB4444;
+      /* Theme color for icons */
+      margin-bottom: 1rem;
+  }
+
+  .category-feature-card h5 {
+      font-weight: bold;
+  }
+
+  .promo-banner {
+      background: url('./utils/images/electronics-promo-bg.jpg') no-repeat center center;
+      /* Placeholder image */
+      background-size: cover;
+      border-radius: 0.75rem;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #f8f9fa;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .promo-banner .overlay {
+      background-color: rgba(226, 206, 219, 0.5);
+      /* Dark overlay */
+      border-radius: 0.75rem;
+      padding: 3rem 2rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .promo-banner h2 {
+      font-size: 2.8rem;
+      font-weight: bold;
+  }
+
+  /* --- Media Queries (from previous updates) --- */
+  @media (max-width: 991.98px) {
+      .hero-electronics .hero-text {
+          text-align: center;
+          /* Center text on small screens */
+      }
+
+      .hero-electronics .hero-image {
+          margin-top: 2rem;
+          /* Space between text and image */
+      }
+
+      .hero-electronics .hero-text h1 {
+          font-size: 2.5rem;
+          /* Smaller title on small screens */
+      }
+
+      .side-image-container {
+          padding-bottom: 0;
+          padding-top: 1.5rem;
+          text-align: center;
+      }
+
+      .side-image {
+          max-width: 300px;
+          height: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      .form-section {
+          margin-top: 1.5rem;
+      }
+
+      .promo-banner h2 {
+          font-size: 2rem;
+          /* Smaller promo title on small screens */
+      }
+  }
+
+  @media (max-width: 767.98px) {
+      .carousel-item img {
+          height: 15rem;
+          object-fit: contain;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .side-image-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100%;
+          padding-top: 0;
+          padding-bottom: 0;
+      }
+
+      .form-section {
+          min-height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 3rem;
+          margin-top: 0;
+      }
+
+      .carousel-item img {
+          height: 25rem;
+      }
+  }

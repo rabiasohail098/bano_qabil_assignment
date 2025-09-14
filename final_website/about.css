@@ -1,0 +1,275 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.top-header {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 0;
+  font-size: 0.875rem;
+  /* Small text */
+}
+
+.top-header .header span {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.top-header select {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.top-header select option {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar Customization */
+.navbar-brand {
+  font-weight: 700;
+  /* Bold for Exclusive */
+  font-size: 1.75rem;
+  /* Larger font size */
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #db4444 !important;
+  /* Red hover for nav links */
+}
+
+.navbar-nav .nav-link.active {
+  color: #db4444 !important;
+  /* Active link red */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  /* Remove outline on toggler focus */
+}
+
+.dropdown-menu {
+  line-height: 1.8rem;
+  /* Adjust line height for dropdown */
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  color: #db4444;
+  background-color: #f8f9fa;
+}
+
+.about-section {
+      padding: 60px 0;
+    }
+
+    .about-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .stat-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.05);
+    }
+
+    .team-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+    }
+
+    .team-photo img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      margin-right: 8px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .badge-card {
+      /* display: flex; */
+      align-items: center;
+      gap: 2rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      padding: 3rem;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,.05);
+      text-align: center;
+    }
+    .badge-card i {
+      font-size: 1.5rem;
+      color: #e11d48;
+    }
+  /* Footer Styles */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 0;
+  /* More vertical padding */
+}
+
+footer h3 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+footer p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+footer .form-control {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+footer .form-control::placeholder {
+  color: #ccc;
+}
+
+footer .form-control:focus {
+  background-color: transparent;
+  border-color: #db4444;
+  box-shadow: none;
+  color: #fff;
+}
+
+footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  /* Invert social icons to white */
+}
+
+footer .qr-code {
+  max-width: 100px;
+  /* Control QR code size */
+  height: auto;
+}
+
+footer .app-store-btn {
+  max-width: 120px;
+  /* Control app store button size */
+  height: auto;
+}
+
+/* Custom styles for the input group in the footer */
+.footer-subscribe .input-group {
+  max-width: 250px;
+  /* Limit width of subscribe input */
+}
+
+.footer-subscribe .input-group-text {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-left: none;
+  /* Remove left border for icon */
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .side-image-container {
+    padding-bottom: 0;
+    /* Ensures no extra padding below image when stacked */
+    padding-top: 1.5rem;
+    /* Add some top padding when stacked */
+    /* Add this to center the image if its parent is text-align: left by default */
+    text-align: center;
+  }
+
+  .side-image {
+    max-width: 300px;
+    /* Limit image width on smaller screens for better aesthetics */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Ensures margin auto works */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-section {
+    margin-top: 1.5rem;
+    /* Add top margin to form section when stacked below image */
+  }
+}
+
+/* For screens smaller than medium (below 768px) */
+@media (max-width: 767.98px) {
+
+  /* Changed from 768px to 767.98px for common breakpoint usage */
+  .carousel-item img {
+    height: 15rem;
+    /* Shorter height for carousel images on very small screens */
+    object-fit: contain;
+    /* Ensure image fits well */
+  }
+}
+
+/* For large screens and up (992px and above) */
+@media (min-width: 992px) {
+  .side-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    /* Take full height of the row */
+    padding-top: 0;
+    /* Remove top padding when side-by-side */
+    padding-bottom: 0;
+    /* Remove bottom padding when side-by-side */
+  }
+
+  .form-section {
+    min-height: 100%;
+    /* Take full height of the row */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically center content within the form section */
+    padding: 3rem;
+    /* Generous padding on large screens */
+    margin-top: 0;
+    /* Remove top margin when side-by-side */
+  }
+
+  /* Optionally, refine carousel image height for large screens if needed */
+  .carousel-item img {
+    height: 25rem;
+    /* Original height for large screens */
+  }
+}

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Exclusive</title>
+    <link rel="stylesheet" href="products.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+<body>
+    <header>
+        <!-- Top Header Bar (unchanged) -->
+        <div class="top-header">
+            <div class="container d-flex flex-column flex-md-row justify-content-md-between align-items-center text-center">
+                <p class="header mb-2 mb-md-0 flex-grow-1 text-md-center">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#" class="text-white text-decoration-underline fw-bold ms-1">ShopNow</a></p>
+                <div class="ms-md-auto mt-2 mt-md-0">
+                    <select name="language" class="form-select form-select-sm bg-dark text-white border-0">
+                        <option value="English">English</option>
+                        <option value="Urdu">Urdu</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar (Products link active) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="#">Exclusive</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./womanfashion.html">Woman’s Fashion</a></li>
+                                <li><a class="dropdown-item" href="./manfashion.html">Men’s Fashion</a></li>
+                                <li><a class="dropdown-item" href="./electronic.html">Electronics</a></li>
+                                <li><a class="dropdown-item" href="./lifestyle.html">Home & Lifestyle</a></li>
+                                <li><a class="dropdown-item" href="./shoes.html">Shoes</a></li>
+                                <li><a class="dropdown-item" href="./toys.html">Baby’s & Toys</a></li>
+                                <li><a class="dropdown-item" href="./grocery.html">Groceries & Pets</a></li>
+                                <li><a class="dropdown-item" href="./beauty.html">Health & Beauty</a></li>
+                            </ul>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./products.html" tabindex="-1">Products</a> <!-- Active here -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" tabindex="-1">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="./signin.html" class="btn btn-outline-danger me-2">Sign In</a>
+                        <a href="./signup.html" class="btn btn-danger">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="container py-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-muted">Home</a></li>
+                <li class="breadcrumb-item active text-danger" aria-current="page">All Products</li>
+            </ol>
+        </nav>
+    </section>
+
+    <!-- NEW: Products Hero Section -->
+    <section class="container products-hero">
+        <div class="container py-5">
+            <h1 class="display-3 mb-3">Your One-Stop Shop for Everything!</h1>
+            <p class="lead">From cutting-edge electronics to the latest fashion, discover products tailored for every need and style.</p>
+            <a href="#product-grid-start" class="btn btn-danger btn-lg fw-bold mt-3">Start Shopping Now</a>
+        </div>
+    </section>
+
+    <!-- NEW: Filter and Sort Bar -->
+    <section class="container py-4" id="product-grid-start">
+        <div class="filter-sort-bar">
+            <div class="d-flex align-items-center gap-2">
+                <label for="categoryFilter" class="mb-0">Category:</label>
+                <select class="form-select form-select-sm" id="categoryFilter" aria-label="Filter by category">
+                    <option selected>All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="men-fashion">Men's Fashion</option>
+                    <option value="women-fashion">Woman's Fashion</option>
+                    <option value="lifestyle">Home & Lifestyle</option>
+                    <option value="beauty">Health & Beauty</option>
+                    <option value="toys">Kid's Toy</option>
+                    <option value="grocery">Groceries & Pets</option>
+                    <option value="shoes">Shoes</option>
+                </select>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <label for="priceFilter" class="mb-0">Price Range:</label>
+                <select class="form-select form-select-sm" id="priceFilter" aria-label="Filter by price range">
+                    <option selected>All Prices</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="51-100">$51 - $100</option>
+                    <option value="101-500">$101 - $500</option>
+                    <option value="501-1000">$501 - $1000</option>
+                    <option value="1000+">$1000+</option>
+                </select>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <label for="sortBy" class="mb-0">Sort By:</label>
+                <select class="form-select form-select-sm" id="sortBy" aria-label="Sort products by">
+                    <option selected>Relevance</option>
+                    <option value="newest">Newest Arrivals</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="rating">Average Rating</option>
+                </select>
+            </div>
+
+            <button class="btn btn-outline-danger btn-sm">Apply Filters</button>
+            <button class="btn btn-link text-muted btn-sm">Clear Filters</button>
+        </div>
+    </section>
+
+    <!-- Product Grid Sections (Updated with consistent styling) -->
+    <section class="container mb-5">
+        <!-- Electronics Items -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Explore</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Electronics Items</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (8).png" class="card-img-top" alt="ASUS FHD Gaming Laptop">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ASUS FHD Gaming Laptop</h5>
+                        <p class="card-text">$600 <span class="text-decoration-line-through text-black-50">$900</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (1).png" class="card-img-top" alt="RGB liquid CPU Cooler">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">RGB liquid CPU Cooler</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$90</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Frame 570.png" class="card-img-top" alt="HAVIT HV-G92 Gamepad">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">HAVIT HV-G92 Gamepad</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$80</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Frame 570 (1).png" class="card-img-top" alt="AK-900 Wired Keyboard">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">AK-900 Wired Keyboard</h5>
+                        <p class="card-text">$40 <span class="text-decoration-line-through text-black-50">$60</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Man's Fashion -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Best Selling</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Man's Fashion</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Frame 32.png" class="card-img-top" alt="VERTICAL STRIPED SHIRT">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">VERTICAL STRIPED SHIRT</h5>
+                        <p class="card-text">$260 <span class="text-decoration-line-through text-black-50">$360</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Frame 34.png" class="card-img-top" alt="Polo with Tipping Details">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Polo with Tipping Details</h5>
+                        <p class="card-text">$960 <span class="text-decoration-line-through text-black-50">$1160</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Frame 33.png" class="card-img-top" alt="Gradient Graphic T-shirt">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gradient Graphic T-shirt</h5>
+                        <p class="card-text">$160 <span class="text-decoration-line-through text-black-50">$180</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Frame 70.png" class="card-img-top" alt="COURAGE GRAPHIC T-SHIRT">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">COURAGE GRAPHIC T-SHIRT</h5>
+                        <p class="card-text">$360 <span class="text-decoration-line-through text-black-50">$560</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Woman's Fashion -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Latest Trends</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Woman's Fashion</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (3).png" class="card-img-top" alt="The north coat">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Winter Coat</h5>
+                        <p class="card-text">$260 <span class="text-decoration-line-through text-black-50">$360</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 7.png" class="card-img-top" alt="Green Long Kurti">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Green Long Kurti</h5>
+                        <p class="card-text">$260 <span class="text-decoration-line-through text-black-50">$360</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 7.jpg" class="card-img-top" alt="Purple Gown">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Purple Gown</h5>
+                        <p class="card-text">$960 <span class="text-decoration-line-through text-black-50">$1160</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (11).png" class="card-img-top" alt="Gucci duffle bag">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gucci Duffle Bag</h5>
+                        <p class="card-text">$960 <span class="text-decoration-line-through text-black-50">$1160</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home and Lifestyle -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Comfort & Style</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Home and Lifestyle</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Group 95.png" class="card-img-top" alt="Asgaard Sofa">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Asgaard Sofa</h5>
+                        <p class="card-text">$600 <span class="text-decoration-line-through text-black-50">$900</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/image 106.png" class="card-img-top" alt="Dining Table">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Dining Table</h5>
+                        <p class="card-text">$600 <span class="text-decoration-line-through text-black-50">$900</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Mask Group.png" class="card-img-top" alt="Bedroom Set">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Bedroom Set</h5>
+                        <p class="card-text">$600 <span class="text-decoration-line-through text-black-50">$800</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Mask group (1).png" class="card-img-top" alt="Casaliving Wood Furniture">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casaliving Wood Chair</h5>
+                        <p class="card-text">$40 <span class="text-decoration-line-through text-black-50">$60</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Health and Beauty -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Essentials</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Health and Beauty</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (3).png" class="card-img-top" alt="Nourishing Facial Serum">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Nourishing Facial Serum</h5>
+                        <p class="card-text">$260 <span class="text-decoration-line-through text-black-50">$360</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (1).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (11).png" class="card-img-top" alt="Hydrating Body Lotion">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hydrating Body Lotion</h5>
+                        <p class="card-text">$960 <span class="text-decoration-line-through text-black-50">$1160</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart.png" class="card-img-top" alt="Curology Product Set">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Curology Product Set</h5>
+                        <p class="card-text">$160 <span class="text-decoration-line-through text-black-50">$180</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/per.png" class="card-img-top" alt="GUCCI INTENSE OUD EDP">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">GUCCI INTENSE OUD EDP</h5>
+                        <p class="card-text">$360 <span class="text-decoration-line-through text-black-50">$560</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kid's Toy -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Fun & Games</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Kid's Toy Collection</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 23.png" class="card-img-top" alt="Magna etiam toy car">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Magna etiam toy car</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$90</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 24.png" class="card-img-top" alt="Blocks shape-sorting Toy">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Blocks shape-sorting Toy</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$90</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/image 11 (4).png" class="card-img-top" alt="Hape scoot-around">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hape Scoot-Around</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$80</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 25.png" class="card-img-top" alt="Magna etiam tempor rings">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Magna etiam tempor rings</h5>
+                        <p class="card-text">$40 <span class="text-decoration-line-through text-black-50">$60</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grocery and Pets -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Fresh & Healthy</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Grocery and Pet Supplies</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/mayo.png" class="card-img-top" alt="Mayonnaise Eggless">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mayonnaise Eggless</h5>
+                        <p class="card-text">$6 <span class="text-decoration-line-through text-black-50">$9</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/apple (2).png" class="card-img-top" alt="Fresh Apples">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Apples (1kg)</h5>
+                        <p class="card-text">$6 <span class="text-decoration-line-through text-black-50">$9</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/oil.png" class="card-img-top" alt="Olive Oil">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Olive Oil</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$80</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/bot.png" class="card-img-top" alt="Beverages">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Assorted Beverages Pack</h5>
+                        <p class="card-text">$40 <span class="text-decoration-line-through text-black-50">$60</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shoes -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Step Out</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Top Selling Shoes</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 6 (1).jpg" class="card-img-top" alt="Stylish Women's Heels">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish Women's Heels</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$90</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 6 (1).png" class="card-img-top" alt="Men's Running Shoes">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Men's Performance Running Shoes</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$90</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 6 (2).png" class="card-img-top" alt="Casual Trainers">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lightweight Casual Trainers</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$80</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 6 (3).jpg" class="card-img-top" alt="Trendy Red Sneakers">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Trendy Red Sneakers</h5>
+                        <p class="card-text">$40 <span class="text-decoration-line-through text-black-50">$60</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Load More Button -->
+    <section class="container text-center mb-5">
+        <button class="btn btn-danger px-4 py-2">Load More Products</button>
+    </section>
+
+    <!-- NEW: Why Shop All Products With Us Section -->
+    <section class="container py-5 bg-white rounded shadow-sm my-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="main-section-title mb-4">Discover the Exclusive Difference!</h2>
+                <p class="lead text-muted mb-3">At Exclusive, we bring together a world of products, carefully curated for quality, style, and value. Whether you're upgrading your tech, refreshing your wardrobe, or finding the perfect gift, we've got you covered.</p>
+                <p class="text-muted">Enjoy a seamless shopping experience with secure payments, fast delivery, and dedicated customer support. We are committed to making your shopping journey exceptional, every single time. Explore our diverse catalog and find exactly what you need!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (unchanged) -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+                <!-- Exclusive -->
+                <div class="col">
+                    <h3 class="mb-3">Exclusive</h3>
+                    <h5 class="mb-2">Subscribe</h5>
+                    <p class="mb-3">Get 10% off your first order</p>
+                    <div class="input-group footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                        <span class="input-group-text"><i class="fas fa-paper-plane"></i></span>
+                    </div>
+                </div>
+                <!-- Support -->
+                <div class="col">
+                    <h3 class="mb-3">Support</h3>
+                    <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+                <!-- Account -->
+                <div class="col">
+                    <h3 class="mb-3">Account</h3>
+                    <p><a href="#" class="text-white text-decoration-none">My Account</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Login / Register</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Cart</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">WishList</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Shop</a></p>
+                </div>
+                <!-- Quick Link -->
+                <div class="col">
+                    <h3 class="mb-3">Quick Link</h3>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Terms Of Use</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">FAQ</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+                </div>
+                <!-- Download App -->
+                <div class="col">
+                    <h3 class="mb-3">Download App</h3>
+                    <p class="mb-3">Save $3 with App New User Only</p>
+                    <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
+                        <img src="./utils/images/Qr Code.png" alt="QR Code" class="img-fluid qr-code mb-2 mb-sm-0">
+                        <div>
+                            <a href="#" class="d-block mb-2"><img src="./utils/images/play.png" alt="Google Play Store" class="img-fluid app-store-btn"></a>
+                            <a href="#" class="d-block"><img src="./utils/images/download-appstore.png" alt="App Store" class="img-fluid app-store-btn"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-4 social-icons">
+                        <a href="#"><img src="./utils/images/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="./utils/images/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="./utils/images/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="./utils/images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-3 border-top border-secondary">
+                <p class="mb-0 text-secondary">&copy; Copyright Exclusive 2024. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

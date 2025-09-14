@@ -1,0 +1,403 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Assuming a common font, adjust if needed */
+    color: #333;
+}
+
+/* Top Header Styles */
+.top-header {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 0;
+    font-size: 0.875rem;
+    /* Small text */
+}
+
+.top-header .header span {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.top-header select {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.top-header select option {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navbar Customization */
+.navbar-brand {
+    font-weight: 700;
+    /* Bold for Exclusive */
+    font-size: 1.75rem;
+    /* Larger font size */
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #DB4444 !important;
+    /* Red hover for nav links */
+}
+
+.navbar-nav .nav-link.active {
+    color: #DB4444 !important;
+    /* Active link red */
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    /* Remove outline on toggler focus */
+}
+
+.dropdown-menu {
+    line-height: 1.8rem;
+    /* Adjust line height for dropdown */
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    color: #DB4444;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+    border-bottom: 1px solid #dee2e6;
+    /* Separator for hero */
+    padding-bottom: 2rem;
+    /* Add some space below hero */
+}
+
+.hero-aside {
+    border-right: 1px solid #dee2e6;
+    /* Separator for sidebar */
+    padding-right: 1.5rem;
+    /* Space between sidebar and main content */
+}
+
+.hero-aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-aside li {
+    padding: 0.5rem 0;
+}
+
+.hero-aside a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.hero-aside a:hover {
+    color: #DB4444;
+}
+
+.hero-right-content {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.5rem;
+    min-height: 250px;
+    /* Minimum height for better appearance */
+}
+
+.hero-right-content h1 {
+    font-size: 2.5rem;
+    /* Large heading */
+    font-weight: bold;
+}
+
+.hero-right-content .first {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.hero-right-content span p {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hero-right-content img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Ensure image fits well */
+}
+
+/* Section Headings (Today's, Categories, This Month, Our Products, Featured) */
+.section-header-line {
+    background-color: #DB4444;
+    width: 1.3rem;
+    height: 2.5rem;
+    /* Increased height for visibility */
+    border-radius: 0.25rem;
+}
+
+.section-heading-text {
+    color: #DB4444;
+    font-weight: bold;
+    font-size: 1.1rem;
+    /* Slightly larger for sub-heading */
+}
+
+.main-section-title {
+    font-weight: bold;
+    font-size: 2.2rem;
+    /* Larger for main title */
+}
+
+/* Flash Sales Timer */
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-box p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.timer-box h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.timer-separator {
+    width: 5px;
+    height: 18px;
+    margin-top: 2rem;
+    /* Align with timer numbers */
+    object-fit: contain;
+}
+
+/* Card Customization */
+.card {
+    border: none;
+    /* Remove card border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow */
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Lift card on hover */
+}
+
+/* --- NEW: Image Wrapper for Cards --- */
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    /* Creates a 1:1 aspect ratio container (square) */
+    overflow: hidden;
+    background-color: #F5F5F5;
+    /* Light grey background for the image area */
+    display: flex;
+    /* Use flex to center padding if needed, though not strictly for this aspect ratio trick */
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This will now cover the 1:1 aspect ratio container */
+    padding: 1rem;
+    /* Keep original padding inside the wrapper if desired */
+}
+
+/* --- END NEW --- */
+
+.card .card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-weight: 600;
+    color: #DB4444;
+}
+
+.card-text span {
+    color: #000;
+    margin-left: 0.5rem;
+    /* Smaller margin */
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.star-rating img {
+    width: 20px;
+    height: 16px;
+    margin-right: 0.1rem;
+    object-fit: contain;
+    background-color: transparent;
+    /* Override card img background */
+    padding: 0;
+}
+
+/* Special category card */
+.category-card.bg-danger {
+    color: white;
+}
+
+.category-card.bg-danger img {
+    filter: brightness(0) invert(1);
+    /* Invert color for white background if needed */
+}
+
+.category-card {
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    height: 100%;
+    /* Ensure category cards take full height */
+    padding: 1rem;
+    /* Add padding to category cards */
+}
+
+.category-card:hover {
+    background-color: #DB4444;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.category-card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.category-card img {
+    max-width: 80px;
+    /* Control size of category card icons */
+    height: auto;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    /* No extra padding for category icons */
+    background-color: transparent;
+    /* Ensure transparent background */
+}
+
+/* Carousel images */
+.carousel-item img {
+    height: 25rem;
+    /* Adjust height for larger screens */
+    object-fit: contain;
+    width: 100%;
+    background-color: transparent;
+    /* Override card img background */
+    padding: 0;
+    /* Override card img padding */
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 15rem;
+        /* Shorter height on smaller screens */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 0;
+    /* More vertical padding */
+}
+
+footer h3 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+footer .form-control {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+footer .form-control::placeholder {
+    color: #ccc;
+}
+
+footer .form-control:focus {
+    background-color: transparent;
+    border-color: #DB4444;
+    box-shadow: none;
+    color: #fff;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    /* Invert social icons to white */
+}
+
+footer .qr-code {
+    max-width: 100px;
+    /* Control QR code size */
+    height: auto;
+}
+
+footer .app-store-btn {
+    max-width: 120px;
+    /* Control app store button size */
+    height: auto;
+}
+
+/* Custom styles for the input group in the footer */
+.footer-subscribe .input-group {
+    max-width: 250px;
+    /* Limit width of subscribe input */
+}
+
+.footer-subscribe .input-group-text {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-left: none;
+    /* Remove left border for icon */
+    color: #fff;
+}

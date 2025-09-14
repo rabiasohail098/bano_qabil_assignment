@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery & Pets - Exclusive</title>
+    <link rel="stylesheet" href="grocery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+</head>
+<body>
+    <header>
+        <!-- Top Header Bar (unchanged) -->
+        <div class="top-header">
+            <div class="container d-flex flex-column flex-md-row justify-content-md-between align-items-center text-center">
+                <p class="header mb-2 mb-md-0 flex-grow-1 text-md-center">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="./products.html" class="text-white text-decoration-underline fw-bold ms-1">ShopNow</a></p>
+                <div class="ms-md-auto mt-2 mt-md-0">
+                    <select name="language" class="form-select form-select-sm bg-dark text-white border-0">
+                        <option value="English">English</option>
+                        <option value="Urdu">Urdu</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar (Grocery & Pets link active) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="#">Exclusive</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./womanfashion.html">Woman’s Fashion</a></li>
+                                <li><a class="dropdown-item" href="./manfashion.html">Men’s Fashion</a></li>
+                                <li><a class="dropdown-item" href="./electronic.html">Electronics</a></li>
+                                <li><a class="dropdown-item" href="./lifestyle.html">Home & Lifestyle</a></li>
+                                <li><a class="dropdown-item" href="./shoes.html">Shoes</a></li>
+                                <li><a class="dropdown-item" href="./toys.html">Baby’s & Toys</a></li>
+                                <li><a class="dropdown-item active" href="./grocery.html">Groceries & Pets</a></li> <!-- Active here -->
+                                <li><a class="dropdown-item" href="./beauty.html">Health & Beauty</a></li>
+                            </ul>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./products.html" tabindex="-1">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" tabindex="-1">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="./signin.html" class="btn btn-outline-danger me-2">Sign In</a>
+                        <a href="./signup.html" class="btn btn-danger">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="container py-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-muted">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Groceries & Pets</li>
+            </ol>
+        </nav>
+    </section>
+
+    <!-- NEW: Grocery & Pets Hero Section -->
+    <section class="container hero-grocery">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="mb-3 text-dark">Freshness Delivered: Your Daily Essentials & Pet Needs!</h1>
+                    <p class="lead mb-4 text-dark">From farm-fresh produce to premium pet food, get everything you need for a happy home.</p>
+                    <a href="#featured-products" class="btn btn-lg fw-bold">Shop Groceries & Pet Food</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Featured Categories for Grocery & Pets -->
+    <section class="container py-5 mb-5">
+        <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Explore</h2>
+            </div>
+            <h3 class="main-section-title mb-4">Our Top Categories</h3>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 text-center">
+                <!-- Grocery Category Card 1: Fresh Produce -->
+                <div class="col">
+                    <div class="grocery-category-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2909/2909874.png" alt="Fresh Produce Icon">
+                        <h5 class="fw-bold mb-0">Fresh Produce</h5>
+                    </div>
+                </div>
+                <!-- Grocery Category Card 2: Dairy & Eggs -->
+                <div class="col">
+                    <div class="grocery-category-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2870/2870713.png" alt="Dairy & Eggs Icon">
+                        <h5 class="fw-bold mb-0">Dairy & Eggs</h5>
+                    </div>
+                </div>
+                <!-- Grocery Category Card 3: Beverages -->
+                <div class="col">
+                    <div class="grocery-category-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2909/2909858.png" alt="Beverages Icon">
+                        <h5 class="fw-bold mb-0">Beverages</h5>
+                    </div>
+                </div>
+                <!-- Grocery Category Card 4: Snacks & Staples -->
+                <div class="col">
+                    <div class="grocery-category-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3069/3069006.png" alt="Snacks Icon">
+                        <h5 class="fw-bold mb-0">Snacks & Staples</h5>
+                    </div>
+                </div>
+                <!-- Grocery Category Card 5: Pet Food -->
+                <div class="col">
+                    <div class="grocery-category-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2909/2909802.png" alt="Pet Food Icon">
+                        <h5 class="fw-bold mb-0">Pet Food</h5>
+                    </div>
+                </div>
+                <!-- Grocery Category Card 6: Pet Accessories -->
+                <div class="col">
+                    <div class="grocery-category-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3069/3069014.png" alt="Pet Accessories Icon">
+                        <h5 class="fw-bold mb-0">Pet Accessories</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Recipe & Pet Care Tips Section -->
+    <section class="container py-5 bg-white rounded shadow-sm my-5">
+        <h3 class="main-section-title text-center mb-5">Tips for a Happy Home!</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="recipe-tip-card">
+                    <h5>Quick & Healthy Meal Prep Ideas</h5>
+                    <p>Save time and eat well! Discover easy recipes using our fresh ingredients. From vibrant salads to hearty stews, meal prepping is simple and fun with Exclusive groceries.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="recipe-tip-card">
+                    <h5>Essential Pet Care: Keeping Your Furry Friend Happy</h5>
+                    <p>A happy pet is a healthy pet. Learn about the best nutritional practices, grooming tips, and how to choose the right toys and accessories for your beloved companions.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="recipe-tip-card">
+                    <h5>Sustainable Living: Reducing Food Waste</h5>
+                    <p>Make a difference by reducing food waste! Get practical tips on smart grocery shopping, proper storage techniques, and creative ways to use leftovers, helping both your budget and the planet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Cards Sections -->
+    <section class="container mb-5" id="featured-products">
+        <!-- Fresh Groceries -->
+        <div class="product-category-heading">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Farm Fresh</h2>
+            </div>
+            <h2 class="main-section-title mb-4">Daily Groceries</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/mayo.png" class="card-img-top" alt="Mayonnaise Eggless">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mayonnaise Eggless</h5>
+                        <p class="card-text">$6 <span class="text-decoration-line-through text-black-50">$9</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/apple (2).png" class="card-img-top" alt="Fresh Apples">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Apples (1kg)</h5>
+                        <p class="card-text">$6 <span class="text-decoration-line-through text-black-50">$9</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/oil.png" class="card-img-top" alt="Olive Oil">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Olive Oil</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$80</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/bot.png" class="card-img-top" alt="Beverages">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Assorted Beverages Pack</h5>
+                        <p class="card-text">$40 <span class="text-decoration-line-through text-black-50">$60</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/veg.png" class="card-img-top" alt="Dry Dog Food">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Dry Dog Food</h5>
+                        <p class="card-text">$30 <span class="text-decoration-line-through text-black-50">$50</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/nood.png" class="card-img-top" alt="Cat Litter">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ultra Absorbent Cat Litter</h5>
+                        <p class="card-text">$30 <span class="text-decoration-line-through text-black-50">$50</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 7 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/bana.png" class="card-img-top" alt="Bird Seeds">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Bird Seeds (5kg)</h5>
+                        <p class="card-text">$60 <span class="text-decoration-line-through text-black-50">$100</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 8 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/egg.png" class="card-img-top" alt="Fish Food">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tropical Fish Food Flakes</h5>
+                        <p class="card-text">$30 <span class="text-decoration-line-through text-black-50">$50</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Mid-Section Promo Banner for Grocery & Pets -->
+    <section class="container py-5 mb-5">
+        <div class="promo-banner-grocery">
+            <div class="overlay">
+                <h2 class="mb-3">Weekly Freshness Deals: Don't Miss Out!</h2>
+                <p class="lead">Save big on organic produce, pantry staples, and premium pet food!</p>
+                <button class="btn btn-light btn-lg text-danger fw-bold">View All Offers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Why Shop Grocery & Pets with Us Section -->
+    <section class="container py-5 bg-white rounded shadow-sm my-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+                <h2 class="main-section-title mb-4">Your Trusted Source for Home Essentials!</h2>
+                <p class="lead text-muted mb-3">At Exclusive, we understand the importance of quality food for your family and the best care for your beloved pets. Our selection ensures freshness, nutrition, and value in every purchase.</p>
+                <p class="text-muted">From organic fruits and vegetables to gourmet pantry items and specialized pet diets, we've got everything to keep your home happy and healthy. Enjoy convenient shopping, reliable delivery, and premium products delivered right to your door!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (unchanged) -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+                <!-- Exclusive -->
+                <div class="col">
+                    <h3 class="mb-3">Exclusive</h3>
+                    <h5 class="mb-2">Subscribe</h5>
+                    <p class="mb-3">Get 10% off your first order</p>
+                    <div class="input-group footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                        <span class="input-group-text"><i class="fas fa-paper-plane"></i></span>
+                    </div>
+                </div>
+                <!-- Support -->
+                <div class="col">
+                    <h3 class="mb-3">Support</h3>
+                    <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+                <!-- Account -->
+                <div class="col">
+                    <h3 class="mb-3">Account</h3>
+                    <p><a href="#" class="text-white text-decoration-none">My Account</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Login / Register</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Cart</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">WishList</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Shop</a></p>
+                </div>
+                <!-- Quick Link -->
+                <div class="col">
+                    <h3 class="mb-3">Quick Link</h3>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Terms Of Use</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">FAQ</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+                </div>
+                <!-- Download App -->
+                <div class="col">
+                    <h3 class="mb-3">Download App</h3>
+                    <p class="mb-3">Save $3 with App New User Only</p>
+                    <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
+                        <img src="./utils/images/Qr Code.png" alt="QR Code" class="img-fluid qr-code mb-2 mb-sm-0">
+                        <div>
+                            <a href="#" class="d-block mb-2"><img src="./utils/images/play.png" alt="Google Play Store" class="img-fluid app-store-btn"></a>
+                            <a href="#" class="d-block"><img src="./utils/images/download-appstore.png" alt="App Store" class="img-fluid app-store-btn"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-4 social-icons">
+                        <a href="#"><img src="./utils/images/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="./utils/images/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="./utils/images/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="./utils/images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-3 border-top border-secondary">
+                <p class="mb-0 text-secondary">&copy; Copyright Exclusive 2024. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

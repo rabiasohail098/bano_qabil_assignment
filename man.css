@@ -250,7 +250,8 @@
 
   /* --- NEW: Men's Fashion page specific styles --- */
   .hero-men-fashion {
-      background: linear-gradient(to bottom, rgba(183, 180, 180, 0.8), rgb(121, 119, 121)), url('./utils/images/man-fashion-hero-bg.jpg') no-repeat center center;
+      position: relative;
+      background:  url('./utils/images/man-fashion-hero-bg.jpg') no-repeat center center;
       /* Dark gradient with masculine image */
       background-size: cover;
       min-height: 500px;
@@ -262,8 +263,19 @@
       border-radius: 0.75rem;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
+.hero-men-fashion .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Darker overlay for text contrast */
+  z-index: 0;
+}
 
   .hero-men-fashion .hero-content {
+   
       max-width: 800px;
       /* Limit content width */
       margin: auto;

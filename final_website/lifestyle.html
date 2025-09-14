@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home & Lifestyle - Exclusive</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+<body>
+    <header>
+        <!-- Top Header Bar (unchanged) -->
+        <div class="top-header">
+            <div class="container d-flex flex-column flex-md-row justify-content-md-between align-items-center text-center">
+                <p class="header mb-2 mb-md-0 flex-grow-1 text-md-center">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="./products.html" class="text-white text-decoration-underline fw-bold ms-1">ShopNow</a></p>
+                <div class="ms-md-auto mt-2 mt-md-0">
+                    <select name="language" class="form-select form-select-sm bg-dark text-white border-0">
+                        <option value="English">English</option>
+                        <option value="Urdu">Urdu</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar (Home & Lifestyle link active) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="#">Exclusive</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./womanfashion.html">Woman’s Fashion</a></li>
+                                <li><a class="dropdown-item" href="./manfashion.html">Men’s Fashion</a></li>
+                                <li><a class="dropdown-item" href="./electronic.html">Electronics</a></li>
+                                <li><a class="dropdown-item active" href="./lifestyle.html">Home & Lifestyle</a></li> <!-- Active here -->
+                                <li><a class="dropdown-item" href="./shoes.html">Shoes</a></li>
+                                <li><a class="dropdown-item" href="./toys.html">Baby’s & Toys</a></li>
+                                <li><a class="dropdown-item" href="./grocery.html">Groceries & Pets</a></li>
+                                <li><a class="dropdown-item" href="./beauty.html">Health & Beauty</a></li>
+                            </ul>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./products.html" tabindex="-1">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" tabindex="-1">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="./signin.html" class="btn btn-outline-danger me-2">Sign In</a>
+                        <a href="./signup.html" class="btn btn-danger">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="container py-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html" class="text-decoration-none text-muted">Home</a></li>
+                <li class="breadcrumb-item active text-danger" aria-current="page">Home & Lifestyle</li>
+            </ol>
+        </nav>
+    </section>
+
+    <!-- NEW: Home & Lifestyle Hero Section with Video -->
+    <section class="container hero-lifestyle">
+        <video autoplay muted loop playsinline>
+            <source src="./utils/images/hom.mp4" type="video/mp4">
+            <!-- Add a WebM source for broader browser support if available -->
+            <!-- <source src="./utils/videos/lifestyle-promo.webm" type="video/webm"> -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="mb-3">Craft Your Comfort: The Art of Living</h1>
+            <p class="lead">Discover curated furniture, elegant decor, and smart solutions to transform your house into a home.</p>
+            <a href="#featured-products" class="btn btn-danger btn-lg fw-bold">Explore Home Decor</a>
+        </div>
+    </section>
+
+    <!-- NEW: Shop By Room Section -->
+    <section class="container py-5 mb-5">
+        <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Collections</h2>
+            </div>
+            <h3 class="main-section-title mb-4">Shop By Room</h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 text-start">
+                <!-- Shop By Room Card 1: Living Room -->
+                <div class="col">
+                    <div class="shop-by-room-card">
+                        <img src="./utils/images/Image-living room.png" alt="Living Room" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Living Room</h5>
+                            <p class="text-muted">Comfortable sofas, stylish coffee tables, and more.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm mt-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shop By Room Card 2: Bedroom -->
+                <div class="col">
+                    <div class="shop-by-room-card">
+                        <img src="./utils/images/Mask Group.png" alt="Bedroom" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Bedroom</h5>
+                            <p class="text-muted">Cozy beds, spacious wardrobes, and nightstands.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm mt-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shop By Room Card 3: Dining Room -->
+                <div class="col">
+                    <div class="shop-by-room-card">
+                        <img src="./utils/images/image 106.png" alt="Dining Room" class="card-img-top">
+                        <div class="card-body">
+                            <h5>Dining Room</h5>
+                            <p class="text-muted">Elegant dining tables and comfortable chairs for every meal.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm mt-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shop By Room Card 4: Kitchen -->
+                <div class="col">
+                    <div class="shop-by-room-card">
+                        <img src="./utils/images/kit.png" alt="Kitchen" class="card-img-top"> <!-- Placeholder image -->
+                        <div class="card-body">
+                            <h5>Kitchen</h5>
+                            <p class="text-muted">Smart storage solutions, cookware, and essentials.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm mt-auto">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Selling Products Section 1 -->
+    <section class="container py-5" id="featured-products">
+        <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Our Collection</h2>
+            </div>
+            <h2 class="main-section-title mb-0">Featured Furniture</h2>
+        </div>
+    </section>
+
+    <!-- Product Cards 1-4 -->
+    <section class="container mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Group 95.png" class="card-img-top" alt="Asgaard Sofa">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Asgaard Sofa</h5>
+                        <p class="card-text">$600 <span class="text-decoration-line-through text-black-50">$900</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/image 106.png" class="card-img-top" alt="Dining Table">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Dining Table</h5>
+                        <p class="card-text">$600 <span class="text-decoration-line-through text-black-50">$900</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (3).png" alt="half star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Mask Group.png" class="card-img-top" alt="Modern Bedroom Set">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Bedroom Set</h5>
+                        <p class="card-text">$600 <span class="text-decoration-line-through text-black-50">$800</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star (2).png" alt="empty star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Mask group (1).png" class="card-img-top" alt="Casaliving Wood Chair">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casaliving Wood Chair</h5>
+                        <p class="card-text">$40 <span class="text-decoration-line-through text-black-50">$60</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Inspiration Section -->
+    <section class="container py-5 inspiration-section">
+        <h3 class="main-section-title text-center mb-5">Home Decor Ideas & Inspiration</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="inspiration-card">
+                    <img src="./utils/images/liv.png" class="card-img-top" alt="Minimalist Living Room">
+                    <div class="card-body">
+                        <h5 class="card-title">The Beauty of Minimalism</h5>
+                        <p class="card-text">Discover how less can be more. Create a serene and clutter-free space with these essential minimalist tips.</p>
+                        <a href="#" class="btn btn-link p-0">Read Guide <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="inspiration-card">
+                    <img src="./utils/images/coz.png" class="card-img-top" alt="Cozy Bedroom Setup">
+                    <div class="card-body">
+                        <h5 class="card-title">Creating the Coziest Bedroom</h5>
+                        <p class="card-text">Transform your bedroom into a personal sanctuary with soft textiles, warm lighting, and a touch of nature.</p>
+                        <a href="#" class="btn btn-link p-0">Get Inspired <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="inspiration-card">
+                    <img src="./utils/images/org.png" class="card-img-top" alt="Smart Storage Solutions">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Storage Solutions</h5>
+                        <p class="card-text">Maximize your space with clever and stylish storage solutions that keep your home organized and beautiful.</p>
+                        <a href="#" class="btn btn-link p-0">Explore Ideas <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Selling Products Section 2 -->
+    <section class="container py-5">
+        <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-3">
+                <div class="section-header-line"></div>
+                <h2 class="section-heading-text mb-0">Top Picks</h2>
+            </div>
+            <h2 class="main-section-title mb-0">Comfort & Decor</h2>
+        </div>
+    </section>
+
+    <!-- Product Cards 5-8 -->
+    <section class="container mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Rectangle 40.png" class="card-img-top" alt="Modern Dining Table">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Dining Table</h5>
+                        <p class="card-text">$300 <span class="text-decoration-line-through text-black-50">$500</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Frame 570 (3).png" class="card-img-top" alt="S-Series Comfort Chair">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">S-Series Comfort Chair</h5>
+                        <p class="card-text">$300 <span class="text-decoration-line-through text-black-50">$500</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <!-- Card 7 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Image-living room.png" class="card-img-top" alt="Living Room Centerpiece">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Living Room Centerpiece</h5>
+                        <p class="card-text">$30 <span class="text-decoration-line-through text-black-50">$50</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <!-- Card 8 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-wrapper">
+                        <img src="./utils/images/Cart (2).png" class="card-img-top" alt="Small BookSelf">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Small BookSelf</h5>
+                        <p class="card-text">$30 <span class="text-decoration-line-through text-black-50">$50</span></p>
+                        <div class="d-flex gap-1 star-rating">
+                            <img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star"><img src="./utils/images/star.png" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (unchanged) -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+                <!-- Exclusive -->
+                <div class="col">
+                    <h3 class="mb-3">Exclusive</h3>
+                    <h5 class="mb-2">Subscribe</h5>
+                    <p class="mb-3">Get 10% off your first order</p>
+                    <div class="input-group footer-subscribe">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                        <span class="input-group-text"><i class="fas fa-paper-plane"></i></span>
+                    </div>
+                </div>
+                <!-- Support -->
+                <div class="col">
+                    <h3 class="mb-3">Support</h3>
+                    <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+                <!-- Account -->
+                <div class="col">
+                    <h3 class="mb-3">Account</h3>
+                    <p><a href="#" class="text-white text-decoration-none">My Account</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Login / Register</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Cart</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">WishList</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Shop</a></p>
+                </div>
+                <!-- Quick Link -->
+                <div class="col">
+                    <h3 class="mb-3">Quick Link</h3>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Terms Of Use</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">FAQ</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+                </div>
+                <!-- Download App -->
+                <div class="col">
+                    <h3 class="mb-3">Download App</h3>
+                    <p class="mb-3">Save $3 with App New User Only</p>
+                    <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
+                        <img src="./utils/images/Qr Code.png" alt="QR Code" class="img-fluid qr-code mb-2 mb-sm-0">
+                        <div>
+                            <a href="#" class="d-block mb-2"><img src="./utils/images/play.png" alt="Google Play Store" class="img-fluid app-store-btn"></a>
+                            <a href="#" class="d-block"><img src="./utils/images/download-appstore.png" alt="App Store" class="img-fluid app-store-btn"></a>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-4 social-icons">
+                        <a href="#"><img src="./utils/images/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="./utils/images/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="./utils/images/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="./utils/images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-3 border-top border-secondary">
+                <p class="mb-0 text-secondary">&copy; Copyright Exclusive 2024. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
